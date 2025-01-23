@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+/*--------------- NAV BAR SECTION-----------------*/
+.nav-bar {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 1px 10px rgb(163, 162, 162);
+    position: fixed;
+    /* border: 1px solid blue; */
+
+}
+
+.left-part {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* border: 1px solid red; */
+}
+
+.location {
+    padding-right: 5rem;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+.location a {
+    color: rgb(54, 54, 54);
+    font-weight: 550;
+    padding-right: 8px;
+}
+
+.location input {
+    border: none;
+}
+
+.right-part {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 30px; 
+    padding: 10px;
+    /* border: 2px solid green; */
+}
+
+.right-part a {
+    text-decoration: none;
+    color: rgb(48, 46, 46);
+    padding-right: 1rem;
+    /* border: 1px solid green; */
+}
+
+.right-part a:hover {
+    color: rgb(241, 41, 41);
+}
+
+
+.right-part ul {
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+.right-part sup {
+    color: orangered;
+}
+
+/*------ HERO SECTION What's on your mind? ------*/
+
+main {
+    width: 70%;
+    margin-left: 190px;
+    margin-top: 90px;
+}
+
+.container1 {
+    padding-bottom: 50px;
+    box-shadow: 0 0.5px rgba(173, 171, 171, 0.952);
+    /* border: 1px solid green; */
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    height: 3rem;
+}
+
+.left {
+    padding-top: 13px;
+    padding-left: 14px;
+    font-weight: 500;
+}
+
+.right {
+    padding-top: 13px;
+    padding-right: 19px;
+}
+
+.right i {
+    background: #D8D9DA;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.right i:hover {
+    color: azure;
+}
+
+
+.images-part {
+    display: flex;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.images-part img {
+    width: 10rem;
+    height: 11rem;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+/*------- Top restaurant chains in Dharamshala --------*/
+
+
+.images-part1 {
+    display: flex;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    margin-top: 5px;
+}
+
+.images-part1 img {
+    width: 16rem;
+    height: 11rem;
+    border-radius: 12px;
+    /* border: 1px solid red; */
+}
+
+.images-part1 .img:hover {
+    transform: scale(1.1);
+}
+
+.images-part1 a img {
+    box-shadow: 2px 2px 1px rgba(0, 0, 6);
+}
+
+.images-part1 .img {
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.container2 {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    box-shadow: 0 0.5px rgba(173, 171, 171, 0.952);
+    /* border: 1px solid green; */
+}
+    
+.images-part1 h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: -30px;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.images-part1 h2 {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.images-part1 .star {
+    display: flex;
+    margin-left: 15px;
+    gap: 5px;
+    /* border: 1px solid black; */
+}
+
+.images-part1 .star img {
+    height: 20px;
+    width: 20px;
+    /* border: 1px solid blue; */
+}
+
+.images-part1 .star p {
+    font-weight: 450;
+}
+
+.images-part1 .details {
+    color: rgb(54, 56, 54);
+    padding-left: 15px;
+}
+
+/*----------- Restaurants with online -------------------*/
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 35px;
+    /* border: 1px solid red; */
+}
+
+.button p {
+    padding: 7px;
+    border: 1px solid rgba(110, 107, 107, 0.562);
+    border-radius: 40px;
+    color: rgba(15, 14, 14, 0.87);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button p i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.images-part2 {
+    /* width: 300px; */
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* border: 1px solid rgb(0, 255, 21); */
+}
+
+
+.images-part2 img {
+    width: 100%;
+    height: 150px;
+    /* border: 1px dotted red; */
+}
+
+
+.images-part2 .img:hover {
+    transform: scale(1.1);
+}
+
+.images-part2 .img {
+    transition: 0.5s;
+    padding: 5px;
+    /* border: 1px solid red; */
+    /* margin: 5px; */
+}
+
+.images-part2 .img a img{
+    border-radius: 8px;
+    /* border: 4px dotted rgb(12, 248, 4); */
+}
+
+.images-part2 .star img{
+    width: 20px;
+    height: 20px;
+    /* display: flex; */
+}
+
+.images-part2 .star{
+    display: flex;
+}
+
+.images-part2 .star {
+    display: flex;
+    margin-left: 15px;
+    gap: 5px;
+    /* border: 1px solid black; */
+}
+
+.images-part2 h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: -30px;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+.images-part2 h2 {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.images-part2 .details {
+    color: rgba(107, 109, 107, 0.514);
+    padding-left: 1rem;
+}
+
+.images-part2 .star p {
+    font-weight: 450;
+}
+
+.container3{
+    margin-top: 2.5rem;
+    padding-bottom: 3.75rem;
+    box-shadow: 0 0.5px rgba(173, 171, 171, 0.952);
+}
+
+
+/*============ Footer part one  ==================*/
+/*--------------------- Best Places  -------------------*/
+
+.container4{
+    width: 87%;
+    margin-left: 5rem;
+    margin-top: 5.625rem;
+    margin-bottom: 3.75rem;
+    /* border: 1px solid green; */
+}
+    
+
+.box-one-group {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* border: 1px solid rgb(0, 255, 21); */
+}
+
+.box-one-group h3{
+    border: 1px solid rgba(128, 123, 123, 0.322);
+    border-radius: 10px;
+    font-size: medium;
+    color: rgba(49, 49, 49, 0.897);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.box-one{
+    text-align: center;
+}
+
+
+/*=================== Best Cuisines =========*/
+
+.container5{
+    width: 87%;
+    margin-left: 5rem;
+    margin-top: 5.625rem;
+    margin-bottom: 3.75rem;
+    /* border: 1px solid green; */
+}
+    
+
+.box-two-group {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* border: 1px solid rgb(0, 255, 21); */
+}
+
+.box-two-group h3{
+    border: 1px solid rgba(128, 123, 123, 0.322);
+    border-radius: 10px;
+    font-size: medium;
+    color: rgba(49, 49, 49, 0.897);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.box-two{
+    text-align: center;
+}
+
+
+/*============ Explore Every ============*/
+
+.container6{
+    width: 87%;
+    margin-left: 5rem;
+    margin-top: 5.625rem;
+    padding-bottom: 5rem;
+}
+
+.box-three-group {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* border: 1px solid rgb(0, 255, 21); */
+}
+
+.box-three-group h3{
+    border: 1px solid rgba(128, 123, 123, 0.322);
+    border-radius: 10px;
+    font-size: medium;
+    color: rgba(49, 49, 49, 0.897);
+    padding: 15px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.box-three{
+    text-align: center;
+}
+
+
+/*================ Footer part Two ==========================*/
+
+.footer{
+    background: rgb(240,240,245);
+}
+
+.top{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 11.875rem;
+    padding-top: 2rem;
+    /* border: 1px solid red; */
+}
+.top img{
+    width: 170px;
+    height: 70px;
+    padding-right: 1.25rem;
+    margin-bottom: 3.125rem;
+    /* border: 1px solid red; */
+}
+
+.top p{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: rgb(61,64,71);
+    padding-top: 0.625rem;
+    /* border: 1px solid red; */
+}
+
+.bottom{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 11.875rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* border: 1px solid red; */
+}
+
+.bottom .logo-swiggy p{
+    color: rgb(40, 42, 46);
+    font-weight: 400;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: rgba(61, 64, 71, 0.747);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    /* border: 1px solid red; */
+}
+
+.bottom h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.legal{
+    margin-top: 5.6rem;
+    /* border: 1px solid red; */
+}
+
+.social-links{
+    margin-top: 5.6rem;
+}
+    
+
+.social-links i{
+    margin: 4px;
+    padding-top: 0.625rem;
+    /* border: 1px solid red; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+.see-more{
+    border: 1px solid rgba(134, 133, 133, 0.555);
+    border-radius: 0.625rem;
+    padding-left: 0.625rem;
+}
